@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Népszőrösségi kérdőív</title>
+    </head>
+    <body>
+    <a href="utmutato.html">Tovább a táblázathoz</a>    
+    <form>
+        <h1>Népszőrösségi kérdőív</h1>
+        <label for="Nev">Név</label><br>
+        <input style="border:2px red solid" id="Nev" type="text" name="Nev" placeholder="Szőrös Kristóf" required /><br>
+        <label for="Szul">Születési idő</label><br>
+        <input style="border:2px green solid" id="Szul" type="date" name="Szuldat" value="1976-01-23" required /><br>
+        <label for="Email">Email címe</label><br>
+        <input id="Email" type="email" name="Email" /><br>
+        <label for="Pass">Jelszó</label><br>
+        <input id="Pass" type="password" name="Password" /><br>
+        <label for="suly">Testsúly (három számjegy, kilogrammban)</label><br>
+        <input style="border:2px blue solid" id="suly" type="text" name="Suly" placeholder="120" required pattern="[0-9]\d\d" title="Töltsd ki, te dagadt disznó!" /><br>
+        <fieldset>
+            <legend>Szőrös-e a talpa?</legend>
+        <input id="talp1" type="radio" name="talp" value="1" checked /><label for="talp1">Igen</label><br>
+        <input id="talp2" type="radio" name="talp" value="2" /><label for="talp2">Nem</label><br> 
+        </fieldset>
+        <h5>Írjon részletesen a szeméremszőrzetéről:</h5>
+        <textarea cols="40" rows="10">
+        </textarea><br>
+        <fieldset>
+                <legend>Melyik testnyílásaiból lóg szőrszál?</legend>
+        <input id="orr" type="checkbox" name="Orr" checked><label for="orr">Orr</label><br>
+        <input id="ful" type="checkbox" name="Ful" checked><label for="ful">Fül</label><br>
+        </fieldset>
+        <h5>Adja meg a szőrzetformátumát!</h5>
+        <select multiple size="6">
+            <optgroup label="seggszőrzet">
+                <option value="1" selected>göndör</option>
+                <option value="2">egyenes</option>
+                <option value="3">nincs</option>
+            <optgroup label="lábszőrzet">
+                    <option value="4">göndör</option>
+                    <option value="5">egyenes</option>
+                    <option value="6">nincs</option>    
+            </optgroup>
+        </select><br>
+        <input type="submit" value="Elküld" />
+        <input type="reset" value="Mégsem" />
+    </form>
+    </body>
+</html>
